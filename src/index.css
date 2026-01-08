@@ -125,8 +125,14 @@ iframe {
 /* Style a tags with dangerously set inner html */
 
 .content-container a {
-  color: #ea2627; /* Change to your desired color */
-  text-decoration: underline; /* Change to your desired style */
+  text-decoration: none;
+  color: #fec277;
+  font-weight: bold; /* Change to your desired style */
+}
+
+.yellow-container a {
+  text-decoration: none;
+  color: #2f4aa0;
   font-weight: bold; /* Change to your desired style */
 }
 
@@ -258,9 +264,4 @@ iframe {
   left: 0;
   top: 0;
   border-radius: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: #fec277 !important;
 }

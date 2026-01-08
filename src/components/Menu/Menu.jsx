@@ -287,7 +287,7 @@ function Menu({
                 initial={{ scale: 1, rotate: "0deg" }}
                 whileHover={{ scale: 1.1, rotate: "5deg" }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className={`glow-on-hover bg-titles-color text-main-color ml-2 max-w-[400px] rounded-xl px-5 py-2 text-sm font-bold transition-colors duration-300 ease-linear lg:text-base`}
+                className={`glow-on-hover bg-titles-color text-main-color ml-2 max-w-[400px] cursor-pointer rounded-xl px-5 py-2 text-sm font-bold transition-colors duration-300 ease-linear lg:text-base`}
               >
                 Εγγραφή
               </motion.button>

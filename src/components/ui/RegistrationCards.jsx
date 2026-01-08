@@ -46,7 +46,7 @@ function RegistrationCards({ data }) {
                 <p className="mb-1 text-center text-sm text-white/70">
                   Από 23-03-2026
                 </p>
-                <p className="text-white text-center text-2xl font-bold">
+                <p className="text-center text-2xl font-bold text-white">
                   {fee.latePrice}
                 </p>
               </div>
@@ -81,7 +81,7 @@ function RegistrationCards({ data }) {
             whileHover={{ scale: 1.05, rotate: "2deg" }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="bg-titles-color glow-on-hover rounded-full px-8 py-4 text-lg font-bold text-black shadow-lg transition-all duration-300 ease-linear hover:shadow-xl"
+            className="bg-titles-color glow-on-hover cursor-pointer rounded-full px-8 py-4 text-lg font-bold text-black shadow-lg transition-all duration-300 ease-linear hover:shadow-xl"
           >
             Εγγραφή Τώρα
           </motion.button>

@@ -7,6 +7,9 @@ import {
   FaInfoCircle,
   FaUser,
   FaUsers,
+  FaEnvelope,
+  FaPhone,
+  FaUserTie,
 } from "react-icons/fa";
 
 function PackagesContent({ data }) {
@@ -101,6 +104,40 @@ function PackagesContent({ data }) {
         </div>
         <p className="text-base leading-relaxed text-white">{data.includes}</p>
       </motion.div>
+
+      {/* Contact Information Section */}
+      {data.contactInfo && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.45 }}
+          className="bg-titles-color text-main-color rounded-xl p-6 backdrop-blur-sm md:p-8"
+        >
+          <div className="mb-4 flex items-center gap-3">
+            <FaUserTie className="text-2xl" />
+            <h3 className="text-xl font-bold">Επικοινωνία για Κρατήσεις</h3>
+          </div>
+          <p className="mb-4 text-base leading-relaxed">
+            {data.contactInfo.text}
+          </p>
+          <div className="yellow-container flex flex-col gap-3 md:flex-row md:gap-6">
+            <a
+              href={`mailto:${data.contactInfo.email}`}
+              className="hover:text-main-color/80 flex items-center gap-2 transition-colors"
+            >
+              <FaEnvelope className="text-lg" />
+              <span className="font-semibold">{data.contactInfo.email}</span>
+            </a>
+            <a
+              href={`tel:${data.contactInfo.phone}`}
+              className="hover:text-main-color/80 flex items-center gap-2 transition-colors"
+            >
+              <FaPhone className="text-lg" />
+              <span className="font-semibold">{data.contactInfo.phone}</span>
+            </a>
+          </div>
+        </motion.div>
+      )}
 
       {/* Additional Icons Section */}
       <motion.div
