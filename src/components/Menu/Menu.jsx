@@ -119,7 +119,9 @@ function Menu({
           className={`top-0 z-40 flex w-full flex-row items-center justify-between md:justify-center ${
             isFixed
               ? "bg-main-color/75 fixed shadow-lg shadow-md backdrop-blur-md"
-              : "bg-main-color absolute"
+              : isHome
+                ? "bg-main-color absolute"
+                : "absolute bg-transparent"
           }`}
         >
           <motion.a

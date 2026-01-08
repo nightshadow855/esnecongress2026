@@ -28,18 +28,18 @@ function Venue() {
         Error: {error}
       </div>
     );
-  if (!data || data.length === 0)
+  if (!data || data.tba)
     return (
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeIn" }}
-        className="mx-auto mt-32 flex min-h-[60vh] max-w-[1276px] flex-col items-center justify-center gap-5 px-2 py-10"
+        className="mx-auto flex min-h-[60vh] max-w-[1276px] flex-col items-center justify-center gap-5 px-2 py-10"
       >
         <p className="text-center text-2xl font-extrabold text-white">
-          Το συνεδριακό κέντρο
+          Οι πληροφορίες για το συνεδριακό κέντρο
         </p>
-        <p className="text-lg font-bold text-white">Θα ανακοινωθεί σύντομα</p>
+        <p className="text-lg font-bold text-white">Θα ανακοινωθούν σύντομα</p>
       </motion.div>
     );
 

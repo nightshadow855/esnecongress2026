@@ -39,6 +39,8 @@ function WelcomeMessage() {
         Error: {error}
       </div>
     );
+  if (!data || data.tba) return null;
+
   return (
     <article
       id="about"

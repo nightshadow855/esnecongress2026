@@ -30,7 +30,7 @@ function Committees() {
         Error: {error}
       </div>
     );
-  if (!data || !data.committees)
+  if (!data || !data.committees || data.tba)
     return (
       <motion.div
         initial={{ opacity: 0 }}
