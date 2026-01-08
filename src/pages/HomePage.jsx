@@ -35,7 +35,7 @@ function HomePage() {
         />
 
         {/*Mobile Banner*/}
-        <div className="mx-auto mt-5 max-w-[800px] px-5 lg:hidden">
+        <div className="mx-auto mt-5 max-w-[600px] px-5 lg:hidden">
           <motion.img
             initial={{ opacity: 0, x: 2000 }}
             animate={{ opacity: 1, x: 0 }}
