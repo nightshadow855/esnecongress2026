@@ -50,7 +50,7 @@ function Agenda() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeIn" }}
-      className="mx-auto flex min-h-[60vh] max-w-[1276px] grid-cols-1 flex-col items-center justify-center gap-5 px-2 py-10"
+      className="mx-auto flex min-h-[60vh] max-w-[1276px] grid-cols-1 flex-col items-center justify-center gap-5 px-2 py-10 md:mt-32"
     >
       {data.sponsors && (
         <p className="my-5 text-center text-2xl font-extrabold text-white">

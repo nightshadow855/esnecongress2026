@@ -42,7 +42,7 @@ function App() {
       <PageHeaderImage />*/}
 
       <main
-        className={`z-52 mt-30 flex flex-col items-center justify-start overflow-hidden md:min-h-screen`}
+        className={`z-52 mt-16 flex flex-col items-center justify-start overflow-hidden md:min-h-screen xl:mt-12`}
       >
         {/* Routing */}
 

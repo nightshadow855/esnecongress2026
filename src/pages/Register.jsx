@@ -52,7 +52,7 @@ function Agenda() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeIn" }}
-      className="mx-auto flex min-h-[60vh] max-w-[1276px] flex-col items-center justify-center gap-5 px-2 py-10"
+      className="mx-auto flex min-h-[60vh] max-w-[1276px] flex-col items-center justify-center gap-5 px-2 py-10 md:mt-32"
     >
       <RegistrationCards data={data} />
     </motion.div>

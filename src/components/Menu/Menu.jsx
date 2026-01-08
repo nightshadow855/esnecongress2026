@@ -134,11 +134,11 @@ function Menu({
             <img
               src="/webp/esne-logo.webp"
               alt="esne-logo"
-              className="mx-2 my-5 max-h-[80px] object-contain"
+              className="mx-2 my-5 max-h-[40px] object-contain"
             />
           </motion.a>
           <motion.ul
-            className="relative hidden px-2 py-5 xl:flex xl:flex-row xl:items-center xl:justify-between"
+            className="relative hidden p-2 xl:flex xl:flex-row xl:items-center xl:justify-between"
             onMouseLeave={() => {
               setPosition((pv) => ({
                 ...pv,

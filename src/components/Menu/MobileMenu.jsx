@@ -110,7 +110,7 @@ function MobileMenu({
     >
       <div
         id="mobile-menu"
-        className={`glow-on-hover-burger bg-main-color fixed top-[20px] right-[20px] z-50 flex flex-col rounded-full border-2 border-white p-5`}
+        className={`glow-on-hover-burger bg-main-color fixed top-2 right-5 z-50 flex flex-col rounded-full border-2 border-white p-5`}
       >
         <label className="burger" htmlFor="burger">
           <input
