@@ -1,0 +1,143 @@
+{
+  "goldSponsors": [
+    {
+      "name": "gehealthcare",
+      "imageSrc": "/sponsorsimg/general_electric.jpg",
+      "url": "https://www.gehealthcare.gr/"
+    },
+    {
+      "name": "icon-dynamics",
+      "imageSrc": "/sponsorsimg/icon-dynamics.jpg",
+      "url": "https://icondynamics.gr/"
+    },
+    {
+      "name": "papoudis",
+      "imageSrc": "/sponsorsimg/papoudis.jpg",
+      "url": "https://papoudis.gr/"
+    },
+    {
+      "name": "siemens",
+      "imageSrc": "/sponsorsimg/siemens.jpg",
+      "url": "https://www.siemens-healthineers.com/gr"
+    },
+    {
+      "name": "iatropolis",
+      "imageSrc": "/sponsorsimg/iatropolis.jpg",
+      "url": "https://www.iatropoli.gr/gr/"
+    },
+    {
+      "name": "bayer",
+      "imageSrc": "/sponsorsimg/bayer.jpg",
+      "url": "https://www.bayer.com/el/gr/greece-home"
+    },
+    {
+      "name": "affidea",
+      "imageSrc": "/sponsorsimg/affidea.jpg",
+      "url": "https://affidea.gr/"
+    },
+    {
+      "name": "bioiatriki",
+      "imageSrc": "/sponsorsimg/bioiatriki.jpg",
+      "url": "https://apply.workable.com/bioiatriki/"
+    },
+    {
+      "name": "boston-scientific",
+      "imageSrc": "/sponsorsimg/boston.jpg",
+      "url": "https://www.bostonscientific.com/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "papapostolou",
+      "imageSrc": "/sponsorsimg/papapostolou.jpg",
+      "url": "https://papapostolou.gr/"
+    },
+    {
+      "name": "vian",
+      "imageSrc": "/sponsorsimg/vian.jpg",
+      "url": "https://vian.gr/"
+    },
+    {
+      "name": "iasis-tech",
+      "imageSrc": "/sponsorsimg/iasis-tech.jpg",
+      "url": "https://www.iasistech.gr/"
+    },
+    {
+      "name": "agfa",
+      "imageSrc": "/sponsorsimg/agfa.jpg",
+      "url": "https://www.agfa.com/corporate/"
+    },
+    {
+      "name": "apostolides",
+      "imageSrc": "/sponsorsimg/apostolides.jpg",
+      "url": "https://www.apostolides.gr/"
+    },
+    {
+      "name": "biotypos",
+      "imageSrc": "/sponsorsimg/viotypos.jpg",
+      "url": "https://www.biotypos.gr/"
+    },
+
+    {
+      "name": "fujifilm",
+      "imageSrc": "/sponsorsimg/fujifilm.jpg",
+      "url": "http://www.fujifilm.gr/ "
+    },
+    {
+      "name": "mediray",
+      "imageSrc": "/sponsorsimg/mediray.jpg",
+      "url": "https://www.mediray.gr/"
+    },
+    {
+      "name": "medicalsystems",
+      "imageSrc": "/sponsorsimg/medicalsystems.jpg",
+      "url": "https://www.medicalsystem.gr/"
+    },
+    {
+      "name": "iatriki-diagnosi",
+      "imageSrc": "/sponsorsimg/iatriki-diagnosi.jpg",
+      "url": "https://www.iatrikidiagnosi.gr/ "
+    },
+    {
+      "name": "raymed",
+      "imageSrc": "/sponsorsimg/raymed.jpg",
+      "url": "https://www.raymed.gr/"
+    },
+    {
+      "name": "armor",
+      "imageSrc": "/sponsorsimg/armor.jpg",
+      "url": "https://www.armor.gr/"
+    },
+    {
+      "name": "biotexray",
+      "imageSrc": "/sponsorsimg/biotexray.jpg",
+      "url": "https://biotexray.gr/el/"
+    },
+    {
+      "name": "electa",
+      "imageSrc": "/sponsorsimg/electa.jpg",
+      "url": "https://www.elekta.com/"
+    },
+
+    {
+      "name": "diagnosisco",
+      "imageSrc": "/sponsorsimg/diagnosisco.jpg",
+      "url": "https://diagnosisco.com/"
+    },
+    {
+      "name": "medisof",
+      "imageSrc": "/sponsorsimg/medisof.jpg",
+      "url": "https://medisof.gr/"
+    },
+    {
+      "name": "meditron",
+      "imageSrc": "/sponsorsimg/meditron.jpg",
+      "url": "https://meditron.gr/"
+    },
+    {
+      "name": "radstar",
+      "imageSrc": "/sponsorsimg/radstar.jpg",
+      "url": "https://www.radstar.gr/"
+    }
+  ]
+}

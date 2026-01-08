@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "htmlContent": "<strong>Προσκυνηματική Εκδρομή και Αρτοκλασία στο Ιερό Ναό των Παμμεγίστων Ταξιαρχών Μανταμάδου</strong>",
+    "delay": 1200,
+    "expirationDate": "2025-06-05T00:00:00Z",
+    "buttonText": "Μάθετε Περισσότερα",
+    "buttonUrl": "/trip",
+    "centerText": "true"
+  },
+  {
+    "id": 2,
+    "htmlContent": "<strong>Διάλεξη: Η ΔΥΝΑΜΗ ΤΟΥ ΜΕΤΑΣΧΗΜΑΤΙΣΜΟΥ ΣΤΑ ΠΡΩΤΟΚΟΛΛΑ ΕΠΟΥΛΩΣΗΣ ΤΡΑΥΜΑΤΩΝ ΚΙ ΕΛΚΩΝ</strong><br/>Πέμπτη 08 Μαΐου 2025, 11.30-12.00, Δημοτικό Θέατρο<br/>",
+    "logo": "/webp/integris-notification.webp",
+    "delay": 1200,
+    "expirationDate": "2025-06-05T00:00:00Z",
+    "buttonText": "",
+    "buttonUrl": "",
+    "centerText": "true"
+  },
+  {
+    "id": 3,
+    "htmlContent": "<strong>Διάλεξη: Η ΣΗΜΑΣΙΑ ΑΝΤΙΜΕΤΩΠΙΣΗΣ ΤΗΣ ΒΑΡΗΚΟΪΑΣ & ΣΥΓΧΡΟΝΕΣ ΕΦΑΡΜΟΓΕΣ ΑΚΟΥΣΤΙΚΩΝ ΒΑΡΗΚΟΪΑΣ</strong><br/>Πέμπτη 08 Μαΐου 2025, 12.00-12.30, Δημοτικό Θέατρο<br/>",
+    "logo": "/webp/earton-notification.webp",
+    "delay": 1200,
+    "expirationDate": "2025-06-05T00:00:00Z",
+    "buttonText": "",
+    "buttonUrl": "",
+    "centerText": "true"
+  }
+]

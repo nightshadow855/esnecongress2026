@@ -1,0 +1,266 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-main-color: #2f4aa0;
+  --color-accent-color: #00a1df;
+  --color-titles-color: #fec277;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-ss: 620px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1060px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1410px;
+  --breakpoint-xxl: 1920px;
+
+  --text-sm: clamp(0.8rem, 0.1vw + 0.78rem, 0.89rem);
+  --text-base: clamp(1rem, 0.2vw + 0.95rem, 1.19rem);
+  --text-lg: clamp(1.25rem, 0.35vw + 1.16rem, 1.58rem);
+  --text-xl: clamp(1.56rem, 0.58vw + 1.42rem, 2.11rem);
+  --text-2xl: clamp(1.95rem, 0.9vw + 1.73rem, 2.81rem);
+  --text-3xl: clamp(2.44rem, 1.38vw + 2.1rem, 3.75rem);
+  --text-4xl: clamp(3.05rem, 2.05vw + 2.54rem, 5rem);
+  --text-5xl: clamp(3.81rem, 3vw + 3.07rem, 6.66rem);
+  --text-6xl: clamp(4.77rem, 4.33vw + 3.69rem, 8.88rem);
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+body {
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+iframe {
+  background-color: transparent;
+}
+
+.rpv-core__inner-page {
+  background-color: transparent !important;
+}
+
+/* Scrollbar on browsers */
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 8px; /* Make scrollbar thin */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #006366; /* Your requested color */
+  border-radius: 4px; /* Optional: rounds the corners */
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* Optional: makes track transparent */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Make scrollbar thin */
+  scrollbar-color: #006366 black; /* thumb and track colors */
+}
+
+/* text selection */
+/* Text selection styling */
+::selection {
+  background: #006366;
+  color: white; /* Optional: makes selected text white for better contrast */
+}
+
+/* Firefox text selection */
+::-moz-selection {
+  background: #006366;
+  color: white;
+}
+
+/* Style a tags with dangerously set inner html */
+
+.content-container a {
+  color: #ea2627; /* Change to your desired color */
+  text-decoration: underline; /* Change to your desired style */
+  font-weight: bold; /* Change to your desired style */
+}
+
+.diagonal-bottom {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh; /* Adjust based on your content, ensuring it's always covered */
+  background-color: transparent;
+}
+
+.diagonal-bottom::before {
+  content: "";
+  position: absolute;
+  top: -30%; /* Extend beyond the top to ensure coverage */
+  left: -30%; /* Extend beyond the left to ensure coverage */
+  width: 150%; /* Increase width to ensure coverage */
+  height: 145%; /* Increase height to ensure coverage */
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  z-index: 0;
+}
+
+.custom-toast ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Adjust padding to align the dots properly */
+}
+
+.custom-toast ul li {
+  margin-bottom: 5px; /* Add some space between list items */
+}
+
+/*button glow effect*/
+.glow-on-hover {
+  position: relative;
+  z-index: 0;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(45deg, #ffffff, #f0f0f0, #ffffff);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: inherit;
+}
+
+.glow-on-hover:active:after {
+  background: inherit;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*button glow effect*/
+.glow-on-hover-burger {
+  z-index: 50;
+}
+
+.glow-on-hover-burger:before {
+  content: "";
+  background: linear-gradient(45deg, #ffffff, #f0f0f0, #ffffff);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: inherit;
+}
+
+.glow-on-hover-burger:active:after {
+  background: inherit;
+}
+
+.glow-on-hover-burger:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover-burger:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #fec277 !important;
+}

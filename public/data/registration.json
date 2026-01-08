@@ -1,0 +1,31 @@
+{
+  "title": "Εγγραφή",
+  "regTableHeaders": ["Τύπος Εγγραφής", "Έως 22-03-2026", "Από 23-03-2026"],
+  "registrationFees": [
+    {
+      "name": "Μέλη ΕΣΝΕ",
+      "earlyPrice": "70€",
+      "latePrice": "90€"
+    },
+    {
+      "name": "Μη Μέλη ΕΣΝΕ",
+      "earlyPrice": "140€",
+      "latePrice": "160€"
+    },
+
+    {
+      "name": "Φοιτητές",
+      "earlyPrice": "20€",
+      "latePrice": "40€"
+    }
+  ],
+  "includes": "Η εγγραφή περιλαμβάνει Συνεδριακό Υλικό (τσάντα, badge, πρόγραμμα, usb stick πρακτικών και πιστοποιητικό παρακολούθησης), Παρακολούθηση των εργασιών του Συνεδρίου, Είσοδο στην έκθεση, Διαλείμματα καφέ, Εναρκτήρια Τελετή και Δεξίωση Υποδοχής.<br/> <strong>*Για Φοιτητές είναι απαραίτητη η επίδειξη φοιτητικής ταυτότητας ή εγγράφου πιστοποίησης σπουδών.</strong>",
+  "registrationUrl": "https://registrations.zita-group.com/product/52-esne-registration/",
+
+  "contact": {
+    "name": "Thanasis Liagkis",
+    "link": "mailto:tli@zita-congress.gr",
+    "linkText": "tli@zita-congress.gr.",
+    "textHelp": "Εάν αντιμετωπίσετε οποιοδήποτε πρόβλημα με την εγγραφή σας <br/>παρακαλούμε επικοινωνήστε με τον κ. Θανάση Λιάγκη στο "
+  }
+}

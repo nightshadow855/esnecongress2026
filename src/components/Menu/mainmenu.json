@@ -1,0 +1,51 @@
+{
+  "menu": [
+    {
+      "id": "home",
+      "label": "Αρχική",
+      "link": "/",
+      "subMenu": []
+    },
+    {
+      "id": "info",
+      "label": "Πληροφορίες",
+      "subMenu": [
+        {
+          "id": "committees",
+          "label": "Επιτροπές",
+          "link": "/committees"
+        },
+        {
+          "id": "venue",
+          "label": "Συνεδριακό Κέντρο",
+          "link": "/venue"
+        },
+
+        {
+          "id": "packages",
+          "label": "Πακέτα Μετάβασης & Διαμονής",
+          "link": "/packages"
+        }
+      ]
+    },
+
+    {
+      "id": "scprogram",
+      "label": "Επιστημονικό Πρόγραμμα",
+      "link": "/scprogram",
+      "subMenu": []
+    },
+    {
+      "id": "abstracts",
+      "label": "Οδηγίες Υποβολής Περιλήψεων",
+      "link": "/abstracts",
+      "subMenu": []
+    },
+    {
+      "id": "sponsors",
+      "label": "Χορηγοί",
+      "link": "/sponsors",
+      "subMenu": []
+    }
+  ]
+}
