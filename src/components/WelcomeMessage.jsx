@@ -12,21 +12,6 @@ function WelcomeMessage() {
     "/data/welcomemessage.json",
   );
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize(); // Check on initial load
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   if (loading)
     return (
       <div className="my-20 flex h-screen flex-col items-center justify-center">
@@ -48,11 +33,7 @@ function WelcomeMessage() {
     >
       {data.intro && (
         <Reveal key={uuidv4()}>
-          <p
-            key="intro"
-            className="text-main-color bg-titles-color rounded-lg p-4 text-left text-lg font-bold"
-          >
-            <FaInfoCircle className="mr-2 inline text-lg" />
+          <p key="intro" className="text-left text-base font-bold text-white">
             {data.intro}
           </p>
         </Reveal>
