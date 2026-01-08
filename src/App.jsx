@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
-import "@fontsource/open-sans";
 import HomePage from "./pages/HomePage";
 import Menu from "./components/Menu/Menu";
 import menuData from "./components/Menu/mainmenu.json";
