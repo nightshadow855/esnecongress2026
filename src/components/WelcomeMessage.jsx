@@ -48,7 +48,10 @@ function WelcomeMessage() {
     >
       {data.intro && (
         <Reveal key={uuidv4()}>
-          <p key="intro" className="text-left text-base font-bold text-white">
+          <p
+            key="intro"
+            className="text-main-color bg-titles-color rounded-lg p-4 text-left text-lg font-bold"
+          >
             <FaInfoCircle className="mr-2 inline text-lg" />
             {data.intro}
           </p>
@@ -79,7 +82,7 @@ function WelcomeMessage() {
           data.signatures.map((signature, index) => (
             <p
               key={`signature-${index}`}
-              className="text-center text-base font-bold text-white italic"
+              className="bg-titles-color text-main-color rounded-lg p-4 text-center text-base font-bold italic"
               dangerouslySetInnerHTML={{ __html: signature }}
             ></p>
           ))}
