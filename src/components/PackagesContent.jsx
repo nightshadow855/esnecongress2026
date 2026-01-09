@@ -27,7 +27,7 @@ function PackagesContent({ data }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
-          className="rounded-xl border border-white/10 bg-black/20 p-6 backdrop-blur-sm md:p-8"
+          className="rounded-xl p-6 md:border md:border-white/10 md:bg-black/20 md:p-8 md:backdrop-blur-sm"
         >
           {/* Package Title with Icon */}
           <div className="mb-6 flex items-center justify-center gap-3">
@@ -48,7 +48,7 @@ function PackagesContent({ data }) {
                   duration: 0.3,
                   delay: index * 0.1 + catIndex * 0.05,
                 }}
-                className="group rounded-lg border border-white/10 bg-white/5 p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-lg"
+                className="group rounded-lg p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-lg md:border md:border-white/10 md:bg-white/5"
               >
                 {/* Category Name */}
                 <h3 className="mb-4 text-center text-lg font-bold text-white">
@@ -94,7 +94,7 @@ function PackagesContent({ data }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="rounded-xl border border-white/10 bg-black/20 p-6 backdrop-blur-sm md:p-8"
+        className="rounded-xl p-6 md:border md:border-white/10 md:bg-black/20 md:p-8 md:backdrop-blur-sm"
       >
         <div className="mb-4 flex items-center gap-3">
           <FaInfoCircle className="text-titles-color text-2xl" />
