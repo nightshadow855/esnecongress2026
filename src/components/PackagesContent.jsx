@@ -37,6 +37,13 @@ function PackagesContent({ data }) {
             </h2>
           </div>
 
+          {/* Explainer */}
+          {packageItem.explainer && (
+            <p className="mb-4 text-center text-sm text-white/80 italic">
+              {packageItem.explainer}
+            </p>
+          )}
+
           {/* Categories Grid */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {packageItem.categories.map((category, catIndex) => (
@@ -50,11 +57,6 @@ function PackagesContent({ data }) {
                 }}
                 className="group rounded-lg p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-lg md:border md:border-white/10 md:bg-white/5"
               >
-                {/* Category Name */}
-                <h3 className="mb-4 text-center text-lg font-bold text-white">
-                  {category.name}
-                </h3>
-
                 {/* Pricing Options */}
                 <div className="space-y-3">
                   {/* Single Room */}
