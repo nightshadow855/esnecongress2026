@@ -52,7 +52,7 @@ function Agenda() {
       transition={{ duration: 1, ease: "easeIn" }}
       className="mx-auto flex min-h-[60vh] max-w-[1276px] grid-cols-1 flex-col items-center justify-center gap-5 px-2 py-10 md:mt-32"
     >
-      {data.sponsors && (
+      {data.goldSponsors && data.goldSponsors.length > 0 && (
         <p className="my-5 text-center text-2xl font-extrabold text-white">
           {data.goldSponsors.length > 1 ? "Χρυσοί Χορηγοί" : "Χρυσός Χορηγός"}
         </p>
@@ -77,7 +77,7 @@ function Agenda() {
           </a>
         ))}
       </div>
-      {data.sponsors && (
+      {data.sponsors && data.sponsors.length > 0 && (
         <p className="my-5 text-center text-2xl font-extrabold text-white">
           {data.sponsors.length > 1 ? "Χορηγοί" : "Χορηγός"}
         </p>

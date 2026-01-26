@@ -1,6 +1,12 @@
 {
   "platinumSponsors": [],
   "goldSponsors": [],
-  "sponsors": [],
-  "tba": true
+  "sponsors": [
+    {
+      "name": "emtg",
+      "imageSrc": "/webp/sponsors/emtg.webp",
+      "url": "https://emtg.nl/"
+    }
+  ],
+  "tba": false
 }
