@@ -63,17 +63,16 @@ function PdfViewerGdrive({ url }) {
               <FaDownload className="ml-2" />
             </motion.a>
             {/*Close Button */}
-            <motion.a
+            <motion.button
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              href="/"
-              rel="noreferrer"
+              onClick={goBack}
               className="border-main-color bg-accent-color flex items-center justify-center rounded-full border-2 px-5 py-2 text-lg font-bold text-white"
             >
               <span className="text-base text-white">Κλείσιμο</span>
-            </motion.a>
+            </motion.button>
           </div>
 
           {data.temporary && (

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import PdfViewerGdrive from "@/components/PdfViewerGdrive";
 import { motion } from "framer-motion";
-import PdfViewerVerticalScroll from "@/components/PdfViewerVerticalScroll";
 
 function FirstAnnouncement() {
   //set the title of the page
@@ -20,7 +19,7 @@ function FirstAnnouncement() {
       transition={{ duration: 1, ease: "easeIn" }}
       className="min-h-screen w-full py-10"
     >
-      <PdfViewerVerticalScroll url="/data/first-announcement.json" />
+      <PdfViewerGdrive url="/data/first-announcement.json" />
     </motion.div>
   );
 }

@@ -7,6 +7,12 @@
       "subMenu": []
     },
     {
+      "id": "first-announcement",
+      "label": "Α' Ανακοίνωση",
+      "link": "/first-announcement",
+      "subMenu": []
+    },
+    {
       "id": "info",
       "label": "Πληροφορίες",
       "subMenu": [
