@@ -31,7 +31,7 @@ function Packages() {
         Error: {error}
       </div>
     );
-  if (!data || !data.packages)
+  if (!data || !data.airPackages)
     return (
       <motion.div
         initial={{ opacity: 0 }}

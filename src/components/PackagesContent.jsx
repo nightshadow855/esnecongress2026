@@ -20,8 +20,8 @@ function PackagesContent({ data }) {
         {data.title}
       </h1>
 
-      {/* Packages */}
-      {data.packages.map((packageItem, index) => (
+      {/* Air Packages */}
+      {data.airPackages.map((packageItem, index) => (
         <motion.div
           key={packageItem.id}
           initial={{ opacity: 0, y: 20 }}
@@ -30,19 +30,16 @@ function PackagesContent({ data }) {
           className="rounded-xl p-6 md:border md:border-white/10 md:bg-black/20 md:p-8 md:backdrop-blur-sm"
         >
           {/* Package Title with Icon */}
-          <div className="mb-6 flex items-center justify-center gap-3">
-            <FaPlane className="text-titles-color text-3xl" />
+          <div className="mb-6 flex flex-col items-center justify-center gap-3">
             <h2 className="text-titles-color text-center text-lg font-bold">
+              <FaPlane className="text-titles-color mr-2 inline text-3xl" />
               {packageItem.title}
             </h2>
-          </div>
-
-          {/* Explainer */}
-          {packageItem.explainer && (
             <p className="mb-4 text-center text-sm text-white/80 italic">
-              {packageItem.explainer}
+              {/* Explainer */}
+              {packageItem?.explainer}
             </p>
-          )}
+          </div>
 
           {/* Categories Grid */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -57,6 +54,9 @@ function PackagesContent({ data }) {
                 }}
                 className="group rounded-lg p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-lg md:border md:border-white/10 md:bg-white/5"
               >
+                <h3 className="mb-4 text-center text-2xl font-bold text-white">
+                  {category?.categoryName}
+                </h3>
                 {/* Pricing Options */}
                 <div className="space-y-3">
                   {/* Single Room */}
@@ -91,7 +91,7 @@ function PackagesContent({ data }) {
         </motion.div>
       ))}
 
-      {/* Includes Section */}
+      {/* Air Includes Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -104,9 +104,106 @@ function PackagesContent({ data }) {
             Τα Πακέτα Περιλαμβάνουν
           </h3>
         </div>
-        <p className="text-base leading-relaxed text-white">{data.includes}</p>
+        <div className="text-base leading-relaxed text-white">
+          {data.airIncludes.map((include, index) => (
+            <span key={index} className="block">
+              {`- ${include}`}
+            </span>
+          ))}
+        </div>
       </motion.div>
+      {/* Bus Packages */}
+      {data.busPackages.map((packageItem, index) => (
+        <motion.div
+          key={packageItem.id}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+          className="rounded-xl p-6 md:border md:border-white/10 md:bg-black/20 md:p-8 md:backdrop-blur-sm"
+        >
+          {/* Package Title with Icon */}
+          <div className="mb-6 flex flex-col items-center justify-center gap-3">
+            <h2 className="text-titles-color text-center text-lg font-bold">
+              <FaPlane className="text-titles-color mr-2 inline text-3xl" />
+              {packageItem.title}
+            </h2>
+            <p className="mb-4 text-center text-sm text-white/80 italic">
+              {/* Explainer */}
+              {packageItem?.explainer}
+            </p>
+          </div>
 
+          {/* Categories Grid */}
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            {packageItem.categories.map((category, catIndex) => (
+              <motion.div
+                key={`${packageItem.id}-${catIndex}`}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.3,
+                  delay: index * 0.1 + catIndex * 0.05,
+                }}
+                className="group rounded-lg p-5 transition-all duration-300 hover:bg-white/10 hover:shadow-lg md:border md:border-white/10 md:bg-white/5"
+              >
+                <h3 className="mb-4 text-center text-2xl font-bold text-white">
+                  {category?.categoryName}
+                </h3>
+                {/* Pricing Options */}
+                <div className="space-y-3">
+                  {/* Single Room */}
+                  <div className="rounded-lg border border-white/10 bg-black/10 p-4">
+                    <div className="mb-2 flex items-center justify-center gap-2">
+                      <FaUser className="text-lg text-white" />
+                      <p className="text-center text-sm text-white/70">
+                        Άτομο σε μονόκλινο
+                      </p>
+                    </div>
+                    <p className="text-center text-2xl font-bold text-white">
+                      {category.singlePrice}
+                    </p>
+                  </div>
+
+                  {/* Double Room */}
+                  <div className="rounded-lg border border-white/10 bg-black/10 p-4">
+                    <div className="mb-2 flex items-center justify-center gap-2">
+                      <FaUsers className="text-lg text-white" />
+                      <p className="text-center text-sm text-white/70">
+                        Κατ' άτομο σε δίκλινο
+                      </p>
+                    </div>
+                    <p className="text-center text-2xl font-bold text-white">
+                      {category.doublePrice}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      ))}
+
+      {/* Bus Includes Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="rounded-xl p-6 md:border md:border-white/10 md:bg-black/20 md:p-8 md:backdrop-blur-sm"
+      >
+        <div className="mb-4 flex items-center gap-3">
+          <FaInfoCircle className="text-titles-color text-2xl" />
+          <h3 className="text-titles-color text-xl font-bold">
+            Τα Πακέτα Περιλαμβάνουν
+          </h3>
+        </div>
+        <div className="text-base leading-relaxed text-white">
+          {data.busIncludes.map((include, index) => (
+            <span key={index} className="block">
+              {`- ${include}`}
+            </span>
+          ))}
+        </div>
+      </motion.div>
       {/* Contact Information Section */}
       {data.contactInfo && (
         <motion.div
