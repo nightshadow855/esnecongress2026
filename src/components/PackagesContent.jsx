@@ -15,10 +15,14 @@ import {
 function PackagesContent({ data }) {
   return (
     <div className="content-container flex w-full flex-col justify-center gap-8 px-5">
+    
       {/* Title */}
       <h1 className="text-titles-color mb-4 text-center text-3xl font-extrabold">
         {data.title}
       </h1>
+      <p className="text-titles-color mb-8 text-center text-lg font-semibold italic">
+        {data.subtitle}
+      </p>
 
       {/* Air Packages */}
       {data.airPackages.map((packageItem, index) => (
@@ -111,7 +115,12 @@ function PackagesContent({ data }) {
             </span>
           ))}
         </div>
+        {/* Does Not Include Section */}
+        {data.doesNotInclude && (
+          <p className="mt-4 italic text-white/70">{data.doesNotInclude}</p>
+        )}
       </motion.div>
+        
       {/* Bus Packages */}
       {data.busPackages.map((packageItem, index) => (
         <motion.div
@@ -203,6 +212,10 @@ function PackagesContent({ data }) {
             </span>
           ))}
         </div>
+        {/* Does Not Include Section */}
+        {data.doesNotInclude && (
+          <p className="mt-4 italic text-white/70">{data.doesNotInclude}</p>
+        )}
       </motion.div>
       {/* Contact Information Section */}
       {data.contactInfo && (
