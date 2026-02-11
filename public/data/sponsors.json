@@ -6,6 +6,11 @@
       "name": "emtg",
       "imageSrc": "/webp/sponsors/emtg.webp",
       "url": "https://emtg.nl/"
+    },
+    {
+      "name": "eduployment",
+      "imageSrc": "/webp/sponsors/eduployment.webp",
+      "url": "https://www.eduployment.nl/el/"
     }
   ],
   "tba": false
