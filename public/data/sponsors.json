@@ -1,6 +1,13 @@
 {
   "platinumSponsors": [],
   "goldSponsors": [],
+  "silverSponsors": [
+    {
+      "name": "integris",
+      "imageSrc": "/webp/sponsors/integris.webp",
+      "url": "https://integris.gr/"
+    }
+  ],
   "sponsors": [
     {
       "name": "emtg",

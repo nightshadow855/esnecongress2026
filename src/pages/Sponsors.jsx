@@ -77,6 +77,33 @@ function Agenda() {
           </a>
         ))}
       </div>
+      {data.silverSponsors && data.silverSponsors.length > 0 && (
+        <p className="my-5 text-center text-2xl font-extrabold text-white">
+          {data.silverSponsors.length > 1
+            ? "Αργυροί Χορηγοί"
+            : "Αργυρός Χορηγός"}
+        </p>
+      )}
+      <div className="mx-auto mt-5 flex max-w-[1248px] flex-wrap items-center justify-center gap-5 py-5">
+        {data.silverSponsors.map((sponsor) => (
+          <a
+            href={sponsor.url}
+            key={sponsor.name}
+            target="_blank"
+            rel="noreferrer nofollow"
+          >
+            <motion.img
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.2, spring: 0.1 }}
+              src={sponsor.imageSrc}
+              alt={sponsor.name}
+              className="border-main-color max-w-[300px] rounded-xl border-[5px] object-contain drop-shadow-md"
+            />
+          </a>
+        ))}
+      </div>
       {data.sponsors && data.sponsors.length > 0 && (
         <p className="my-5 text-center text-2xl font-extrabold text-white">
           {data.sponsors.length > 1 ? "Χορηγοί" : "Χορηγός"}
