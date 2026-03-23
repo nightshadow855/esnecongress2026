@@ -30,7 +30,13 @@ export default function GradientBackground() {
       gradient.initGradient("#gradient-canvas");
       gradientRef.current = gradient;
 
-      console.log("✅ Gradient initialized successfully");
+      if (gradient.isWebGlSupported) {
+        console.log("✅ Gradient initialized successfully");
+      } else {
+        console.warn(
+          "⚠️ Gradient fallback active: WebGL not available on this device/browser.",
+        );
+      }
     } catch (error) {
       console.error("❌ Failed to initialize gradient:", error);
     }
