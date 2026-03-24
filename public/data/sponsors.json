@@ -10,6 +10,11 @@
   ],
   "sponsors": [
     {
+      "name": "y-logimed",
+      "imageSrc": "/webp/sponsors/y-logimed.webp",
+      "url": "https://www.y-logimed.gr/"
+    },
+    {
       "name": "emtg",
       "imageSrc": "/webp/sponsors/emtg.webp",
       "url": "https://emtg.nl/"
