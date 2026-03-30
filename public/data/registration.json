@@ -1,6 +1,7 @@
 {
   "title": "Εγγραφή",
-  "regTableHeaders": ["Τύπος Εγγραφής", "Έως 05-04-2026", "Από 06-04-2026"],
+  "earlyBirdDeadline": "Έως 05-04-2026",
+  "lateDeadline": "Από 06-04-2026",
   "registrationFees": [
     {
       "name": "Μέλη ΕΣΝΕ",

@@ -36,7 +36,7 @@ function RegistrationCards({ data }) {
             <div className="space-y-3">
               <div className="rounded-lg border border-white/10 bg-white/5 p-4">
                 <p className="mb-1 text-center text-sm text-white/70">
-                  Έως 22-03-2026
+                  {data.earlyBirdDeadline}
                 </p>
                 <p className="text-center text-2xl font-bold text-white">
                   {fee.earlyPrice}
@@ -44,7 +44,7 @@ function RegistrationCards({ data }) {
               </div>
               <div className="rounded-lg border border-white/10 bg-white/5 p-4">
                 <p className="mb-1 text-center text-sm text-white/70">
-                  Από 23-03-2026
+                  {data.lateDeadline}
                 </p>
                 <p className="text-center text-2xl font-bold text-white">
                   {fee.latePrice}
