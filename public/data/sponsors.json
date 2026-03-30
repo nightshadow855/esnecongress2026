@@ -10,6 +10,11 @@
   ],
   "sponsors": [
     {
+      "name": "y-logimed",
+      "imageSrc": "/webp/sponsors/y-logimed.webp",
+      "url": "https://www.y-logimed.gr/"
+    },
+    {
       "name": "emtg",
       "imageSrc": "/webp/sponsors/emtg.webp",
       "url": "https://emtg.nl/"
@@ -18,6 +23,11 @@
       "name": "eduployment",
       "imageSrc": "/webp/sponsors/eduployment.webp",
       "url": "https://www.eduployment.nl/el/"
+    },
+    {
+      "name": "teleflex",
+      "imageSrc": "/webp/sponsors/teleflex.webp",
+      "url": "https://www.teleflexvascular.com/"
     }
   ],
   "tba": false
