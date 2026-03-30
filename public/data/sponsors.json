@@ -23,6 +23,11 @@
       "name": "eduployment",
       "imageSrc": "/webp/sponsors/eduployment.webp",
       "url": "https://www.eduployment.nl/el/"
+    },
+    {
+      "name": "teleflex",
+      "imageSrc": "/webp/sponsors/teleflex.webp",
+      "url": "https://www.teleflexvascular.com/"
     }
   ],
   "tba": false
