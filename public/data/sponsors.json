@@ -28,6 +28,11 @@
       "name": "teleflex",
       "imageSrc": "/webp/sponsors/teleflex.webp",
       "url": "https://www.teleflexvascular.com/"
+    },
+    {
+      "name": "bbd",
+      "imageSrc": "/webp/sponsors/bbd.webp",
+      "url": "https://www.bbdmedical.com/"
     }
   ],
   "tba": false
