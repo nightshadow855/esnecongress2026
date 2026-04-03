@@ -33,6 +33,16 @@
       "name": "bbd",
       "imageSrc": "/webp/sponsors/bbd.webp",
       "url": "https://www.bbdmedical.com/"
+    },
+    {
+      "name": "mediteraneo hospital",
+      "imageSrc": "/webp/sponsors/mediteraneo.webp",
+      "url": "https://mediterraneohospital.gr/"
+    },
+    {
+      "name": "medicare hellas",
+      "imageSrc": "/webp/sponsors/medicare-hellas.webp",
+      "url": "https://www.medicare-hellas.gr/"
     }
   ],
   "tba": false
