@@ -43,6 +43,11 @@
       "name": "medicare hellas",
       "imageSrc": "/webp/sponsors/medicare-hellas.webp",
       "url": "https://www.medicare-hellas.gr/"
+    },
+    {
+      "name": "Abbott",
+      "imageSrc": "/webp/sponsors/abbott.webp",
+      "url": "https://www.gr.abbott/"
     }
   ],
   "tba": false
