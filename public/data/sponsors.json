@@ -48,6 +48,71 @@
       "name": "Abbott",
       "imageSrc": "/webp/sponsors/abbott.webp",
       "url": "https://www.gr.abbott/"
+    },
+    {
+      "name": "cortessis",
+      "imageSrc": "/webp/sponsors/cortessis.webp",
+      "url": "https://cmedical.gr/"
+    },
+    {
+      "name": "euromedicals",
+      "imageSrc": "/webp/sponsors/euromedicals.webp",
+      "url": "https://euromedicals.de/gr/"
+    },
+    {
+      "name": "geniki-kliniki",
+      "imageSrc": "/webp/sponsors/geniki-kliniki.webp",
+      "url": "https://genikikliniki.gr/"
+    },
+    {
+      "name": "kyanous-stavros",
+      "imageSrc": "/webp/sponsors/kyanous-stavros.webp",
+      "url": "https://kianous-stavros.gr/"
+    },
+    {
+      "name": "sigma medical",
+      "imageSrc": "/webp/sponsors/sigma-medical.webp",
+      "url": "https://medical.gr/sigma-medical-el-2.html?srsltid=AfmBOooegtYFALgKHwl_g85rLXrF8Eh07GleAOukwKY9PrxbnHv005H0"
+    },
+    {
+      "name": "talent-loom",
+      "imageSrc": "/webp/sponsors/talent-loom.webp",
+      "url": "https://talent-loom.com/"
+    },
+    {
+      "name": "iaso",
+      "imageSrc": "/webp/sponsors/iaso.webp",
+      "url": "https://www.iaso.gr/"
+    },
+    {
+      "name": "magiras",
+      "imageSrc": "/webp/sponsors/magiras.webp",
+      "url": "https://magiras.gr/"
+    },
+    {
+      "name": "aenorasis",
+      "imageSrc": "/webp/sponsors/aenorasis.webp",
+      "url": "https://www.aenorasis.com/"
+    },
+    {
+      "name": "therasys",
+      "imageSrc": "/webp/sponsors/therassis.webp",
+      "url": "https://www.therasys.gr/"
+    },
+    {
+      "name": "iatrikes-ekdoseis-lagos",
+      "imageSrc": "/webp/sponsors/lagos.webp",
+      "url": "https://iatrikesekdoseis.gr/product-category/nosileftika/"
+    },
+    {
+      "name": "biokon",
+      "imageSrc": "/webp/sponsors/biokon.webp",
+      "url": "https://www.biokon.gr/"
+    },
+    {
+      "name": "fmfeed",
+      "imageSrc": "/webp/sponsors/fmfeed.webp",
+      "url": "https://fmfeed.eu/"
     }
   ],
   "tba": false
