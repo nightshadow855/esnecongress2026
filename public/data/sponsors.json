@@ -20,6 +20,11 @@
       "url": "https://emtg.nl/"
     },
     {
+      "name": "mediteraneo hospital",
+      "imageSrc": "/webp/sponsors/mediteraneo.webp",
+      "url": "https://mediterraneohospital.gr/"
+    },
+    {
       "name": "eduployment",
       "imageSrc": "/webp/sponsors/eduployment.webp",
       "url": "https://www.eduployment.nl/el/"
@@ -34,11 +39,7 @@
       "imageSrc": "/webp/sponsors/bbd.webp",
       "url": "https://www.bbdmedical.com/"
     },
-    {
-      "name": "mediteraneo hospital",
-      "imageSrc": "/webp/sponsors/mediteraneo.webp",
-      "url": "https://mediterraneohospital.gr/"
-    },
+
     {
       "name": "medicare hellas",
       "imageSrc": "/webp/sponsors/medicare-hellas.webp",
