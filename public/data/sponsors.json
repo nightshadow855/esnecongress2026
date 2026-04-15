@@ -55,10 +55,11 @@
       "imageSrc": "/webp/sponsors/cortessis.webp",
       "url": "https://cmedical.gr/"
     },
+
     {
-      "name": "euromedicals",
-      "imageSrc": "/webp/sponsors/euromedicals.webp",
-      "url": "https://euromedicals.de/gr/"
+      "name": "errikos dynan",
+      "imageSrc": "/webp/sponsors/dynan.webp",
+      "url": "https://www.dunant.gr/"
     },
     {
       "name": "geniki-kliniki",
@@ -99,6 +100,11 @@
       "name": "therasys",
       "imageSrc": "/webp/sponsors/therassis.webp",
       "url": "https://www.therasys.gr/"
+    },
+    {
+      "name": "euromedicals",
+      "imageSrc": "/webp/sponsors/euromedicals.webp",
+      "url": "https://euromedicals.de/gr/"
     },
     {
       "name": "iatrikes-ekdoseis-lagos",
