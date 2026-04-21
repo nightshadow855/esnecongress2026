@@ -15,6 +15,12 @@
       "url": "https://www.y-logimed.gr/"
     },
     {
+      "name": "vianex",
+      "imageSrc": "/webp/sponsors/vianex.webp",
+      "url": "https://www.vianex.gr"
+    },
+
+    {
       "name": "emtg",
       "imageSrc": "/webp/sponsors/emtg.webp",
       "url": "https://emtg.nl/"
