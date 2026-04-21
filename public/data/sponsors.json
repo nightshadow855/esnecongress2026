@@ -92,6 +92,11 @@
       "url": "https://magiras.gr/"
     },
     {
+      "name": "euroclinic",
+      "imageSrc": "/webp/sponsors/euroclinic.webp",
+      "url": "https://www.euroclinic.gr/"
+    },
+    {
       "name": "aenorasis",
       "imageSrc": "/webp/sponsors/aenorasis.webp",
       "url": "https://www.aenorasis.com/"
