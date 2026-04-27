@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaUsers, FaUserTie, FaUserGraduate, FaUser } from "react-icons/fa";
+import CommitteeCountsSummary from "@/components/CommitteeCountsSummary";
 
 function CommitteesContent({ data }) {
   // Icon mapping based on role
@@ -16,6 +17,9 @@ function CommitteesContent({ data }) {
 
   return (
     <div className="content-container flex w-full flex-col justify-center gap-8">
+      {/* Conference stats 
+      <CommitteeCountsSummary committees={data.committees} />*/}
+
       {/* Conference Presidents Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

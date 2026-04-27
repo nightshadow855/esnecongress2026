@@ -131,6 +131,11 @@
       "name": "fmfeed",
       "imageSrc": "/webp/sponsors/fmfeed.webp",
       "url": "https://fmfeed.eu/"
+    },
+    {
+      "name": "traumacare",
+      "imageSrc": "/webp/sponsors/traumacare.webp",
+      "url": "https://traumacare.gr"
     }
   ],
   "tba": false
