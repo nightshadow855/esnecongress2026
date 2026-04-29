@@ -56,11 +56,6 @@
       "imageSrc": "/webp/sponsors/abbott.webp",
       "url": "https://www.gr.abbott/"
     },
-    {
-      "name": "cortessis",
-      "imageSrc": "/webp/sponsors/cortessis.webp",
-      "url": "https://cmedical.gr/"
-    },
 
     {
       "name": "errikos dynan",
@@ -76,6 +71,11 @@
       "name": "kyanous-stavros",
       "imageSrc": "/webp/sponsors/kyanous-stavros.webp",
       "url": "https://kianous-stavros.gr/"
+    },
+    {
+      "name": "cortessis",
+      "imageSrc": "/webp/sponsors/cortessis.webp",
+      "url": "https://cmedical.gr/"
     },
     {
       "name": "sigma medical",
@@ -136,6 +136,16 @@
       "name": "traumacare",
       "imageSrc": "/webp/sponsors/traumacare.webp",
       "url": "https://traumacare.gr"
+    },
+    {
+      "name": "medella",
+      "imageSrc": "/webp/sponsors/medella.webp",
+      "url": "https://www.medella.gr/"
+    },
+    {
+      "name": "jacovides",
+      "imageSrc": "/webp/sponsors/jacovides.webp",
+      "url": "https://www.msjacovides.com/el/%CE%B1%CF%81%CF%87%CE%B9%CE%BA%CE%B7/"
     }
   ],
   "tba": false
